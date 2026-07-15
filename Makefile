@@ -111,7 +111,7 @@ $(INSTALL_PATH)/lib/libgcrypt.a: $(INSTALL_PATH)/lib/libgpg-error.a
 libaacs: $(INSTALL_PATH)/lib/libgcrypt.a
 	@echo "-> Building libaacs..."
 	tar xf $(SRC_DIR)/$(DL_DIR)/libaacs-$(LIBAACS_VER).tar.bz2
-	cd libaacs-$(LIBAACS_VER) && \
+	cd libaacs-$(LIBAACS_VER) && ./bootstrap && \
 		LIBS="-L$(INSTALL_PATH)/lib -lws2_32" \
 		LDFLAGS="$(STATIC_FLAGS)" \
 		./configure --host=$(HOST) --prefix="$(INSTALL_PATH)" --with-gpg-error-prefix="$(INSTALL_PATH)" --with-libgcrypt-prefix="$(INSTALL_PATH)" && \
@@ -123,7 +123,7 @@ libaacs: $(INSTALL_PATH)/lib/libgcrypt.a
 libbdplus: $(INSTALL_PATH)/lib/libgcrypt.a
 	@echo "-> Building libbdplus..."
 	tar xf $(SRC_DIR)/$(DL_DIR)/libbdplus-$(LIBBDPLUS_VER).tar.bz2
-	cd libbdplus-$(LIBBDPLUS_VER) && \
+	cd libbdplus-$(LIBBDPLUS_VER) && ./bootstrap && \
 		LIBS="-L$(INSTALL_PATH)/lib -lws2_32" \
 		LDFLAGS="$(STATIC_FLAGS)" \
 		./configure --host=$(HOST) --prefix="$(INSTALL_PATH)" --with-gpg-error-prefix="$(INSTALL_PATH)" --with-libgcrypt-prefix="$(INSTALL_PATH)" && \

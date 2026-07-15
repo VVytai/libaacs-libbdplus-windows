@@ -44,7 +44,6 @@ make x32
 make x64
 make arm64
 ```
-If the `Makefile` does not work for you, try to use the `build.sh` script instead.
 
 ## Building the Installer
 

@@ -11,8 +11,8 @@ LIBBDPLUS_VER := 0.2.0
 # --- URLs ---
 URL_GPG_ERROR := https://github.com/gpg/libgpg-error/archive/refs/tags/libgpg-error-$(GPG_ERROR_VER).tar.gz
 URL_GCRYPT    := https://github.com/gpg/libgcrypt/archive/refs/tags/libgcrypt-$(LIBGCRYPT_VER).tar.gz
-URL_LIBAACS   := https://download.videolan.org/pub/videolan/libaacs/$(LIBAACS_VER)/libaacs-$(LIBAACS_VER).tar.bz2
-URL_LIBBDPLUS := https://download.videolan.org/pub/videolan/libbdplus/$(LIBBDPLUS_VER)/libbdplus-$(LIBBDPLUS_VER).tar.bz2
+URL_LIBAACS   := https://code.videolan.org/videolan/libaacs/-/archive/$(LIBAACS_VER)/libaacs-$(LIBAACS_VER).tar.bz2
+URL_LIBBDPLUS := https://code.videolan.org/videolan/libbdplus/-/archive/$(LIBBDPLUS_VER)/libbdplus-$(LIBBDPLUS_VER).tar.bz2
 URL_LLVM_MINGW:= https://github.com/mstorsjo/llvm-mingw/releases/download/20251216/llvm-mingw-20251216-ucrt-ubuntu-22.04-x86_64.tar.xz
 
 # --- Configuration ---
